@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Javascript LightBox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="glightbox.min.css">
+    <link rel="stylesheet" href="gallery-custom.css">
+
+</head>
+<body>
+
+
+    <section class="gallery-area2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img4.jpg" alt="" />
+                        <a href="images/gallery-img4.jpg" class="glightbox">
+                            <span class="gallery-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img5.jpg" alt="" />
+                            <a href="images/gallery-img5.jpg" class="glightbox">
+                                <span class="gallery-icon"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img6.jpg" alt="" />
+                            <a href="images/gallery-img6.jpg" class="glightbox">
+                                <span class="gallery-icon"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img7.jpg" alt="" />
+                            <a href="images/gallery-img7.jpg" class="glightbox">
+                                <span class="gallery-icon"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img8.jpg" alt="" />
+                            <a href="images/gallery-img8.jpg" class="glightbox">
+                                <span class="gallery-icon"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img9.jpg" alt="" />
+                            <a href="images/gallery-img9.jpg" class="glightbox">
+                                <span class="gallery-icon"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img10.jpg" alt="" />
+                            <a href="images/gallery-img10.jpg" class="glightbox">
+                                <span class="gallery-icon"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img11.jpg" alt="" />
+                            <a href="images/gallery-img11.jpg" class="glightbox">
+                                <span class="gallery-icon"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="images/gallery-img12.jpg" alt="" />
+                            <a href="images/gallery-img12.jpg" class="glightbox">
+                                <span class="gallery-icon"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="glightbox.min.js"></script>
+    
+    <script>
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true,
+            beforeSlideLoad: (slide, data) => {
+                // Need to execute a script in the slide?
+                // You can do that here...
+            }
+        });
+    </script>
+
+</body>
+</html>
